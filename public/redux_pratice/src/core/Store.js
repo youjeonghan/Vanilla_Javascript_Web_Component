@@ -19,7 +19,6 @@ export const createStore = reducer => {
     for (const [key, value] of Object.entries(newState)) {
       // state의 key가 아닐 경우 변경을 생략한다.
       if (!state[key]) continue;
-      console.log(key, value);
       state[key] = value;
     }
   };

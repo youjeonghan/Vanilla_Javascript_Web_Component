@@ -12,7 +12,6 @@ export class App extends Component {
     this.setup();
   }
   template() {
-    // <h1 class="set__app">0</h1>
     return `
     <h1 class="set__app">${store.getState().app}${store.getState().header}</h1>
       <div class="header__container"></div>
@@ -27,8 +26,7 @@ export class App extends Component {
     const { $el } = this;
 
     $el.querySelector(".set__app").addEventListener("click", ({ target }) => {
-      store.dispatch(setApp(store.getState().app + 1));
-      // store.dispatch(setApp(1));
+      store.dispatch(setApp(1));
     });
   }
 }

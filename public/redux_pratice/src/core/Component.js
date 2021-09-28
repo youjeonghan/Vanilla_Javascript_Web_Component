@@ -13,8 +13,6 @@ export class Component {
   }
 
   setup() {
-    console.log(this.name, ": setup 실행");
-    // this.state = observable(this.initState());
     observe(() => {
       console.log(this.name, ": render, setEvent, mounted 실행");
       this.render();
@@ -24,7 +22,6 @@ export class Component {
   }
 
   set() {
-    console.log(this.name, ": set 실행");
     this.render();
     this.setEvent();
     this.mounted();

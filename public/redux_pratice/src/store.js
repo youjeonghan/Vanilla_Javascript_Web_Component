@@ -1,6 +1,7 @@
 import { createStore } from "./core/Store.js";
 
 const initState = {
+  // 초기 상태 입력
   header: 10,
   app: 1
 };
